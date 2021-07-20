@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html class="page_catalog" lang="ru">
+  <head>
+    <title>Магазин</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/apple_png_152.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body class="page_body">
+    <header class="header">
+      <div class="header_center">
+        <a class="logo_top_left" href="index.html"><img src="img/nerds_logo_top_left_a.svg" width="165" height="66" alt="nerds_logotipe" aria-label="Нердс логотип"></a>
+        <ul class="site_navi catal_breadcrumbs">
+          <li class="site_navi_li"><a href="index.html">Студия</a> </li>
+          <li class="site_navi_li"><a href="#">Клиенты</a> </li>
+          <li class="shop site_navi_li"><a href="catalog.html">Магазин</a> </li>
+          <li class="site_navi_li"><a href="#">Контакты</a> </li>
+        </ul>
+        <a class="basket catal_basket" href="#">Корзина</a>
+      </div>
+      <div class="catal_bot_head">
+        <h1 class="ready_template_shop">Магазин готовых шаблонов</h1>
+      </div>
+
+    </header>
+    <main class="main_catalog">
+      <div class="main_center">
+        <form class="form" method="GET" action="https://echo.htmlacademy.ru">
+          <h2 class="to_hide">Конфигуратор опций</h2>
+          
+          <h2 class="form_heads">Стоимость:</h2>
+          <div class="meter_block">
+            <div class="progress_line">
+              <div class="green_progr_line"></div>
+            </div>
+            <div class="toggler tog_left" aria-label="минимальная сумма"></div>
+            <div class="toggler tog_right" aria-label="максимальная сумма"></div>
+          </div>
+          <div class="from_till_block">
+            <label class="from">от
+              <input class="price" type="text" name="from" placeholder="0">
+            </label>
+            <label class="till">до
+              <input class="price" type="text" name="till" value="150 000">
+            </label>
+          </div>
+          <fieldset class="net">
+            <legend class="form_heads">сетка:</legend>
+            <ul class="check_box_grid_set net_ul">
+              <li class="net_opti adapted">
+                <input class="to_hide inp_radio" type="radio" name="grid" id="adapt" value="adaptiv" checked aria-label="адаптивная сетка">
+                <label for="adapt">Адаптивная</label>
+              </li>
+              <li class="net_opti fixed">
+                <input class="to_hide inp_radio" type="radio" name="grid" id="fix" value="fix" aria-label="Фиксированная сетка" >
+                <label for="fix">Фиксированная</label>
+              </li>
+              <li class="net_opti rubber">
+                <input class="to_hide inp_radio" type="radio" name="grid" id="rubber" value="rubber" aria-label="Резиновая сетка">
+                <label for="rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="features_field">
+            <legend class="form_heads_features">особенности:</legend>
+            <ul class="check_box_feature_set features_field_ul">
+              <li class="feat_opti">
+                <input class="to_hide input_checkbox" type="checkbox" name="slider" id="slder" checked aria-label="Слайдер">
+                <label for="slder">Слайдер</label>
+              </li>
+              <li class="feat_opti">
+                <input class="to_hide input_checkbox" type="checkbox" name="advantages" id="advntgs" aria-label="Блок преимуществ">
+                <label for="advntgs">Блок преимуществ</label>
+              </li>
+              <li class="feat_opti">
+                <input class="to_hide input_checkbox" type="checkbox" name="news" id="nws" checked aria-label="Новости">
+                <label for="nws">Новости</label>
+              </li>
+              <li class="feat_opti">
+                <input class="to_hide input_checkbox" type="checkbox" name="gallery" id="galler" aria-label="Галерея">
+                <label for="galler">Галерея</label>
+              </li>
+              <li class="feat_opti">
+                <input class="to_hide input_checkbox" type="checkbox" name="basket" id="bskt" aria-label="Корзина">
+                <label for="bskt">Корзина</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="show_but" type="submit" aria-label="Кнопка показать">показать</button>
+        </form>
+        <div class="proj_blocks">
+          <h3 class="sort_it_header">сортировать:</h3>
+          <ul class="sort_it_criteria">
+            <li><a class="on_price" href="#" aria-label="Сортировать по цене">по цене</a></li>
+            <li class="on_type_li"><a href="#" class="on_type" aria-label="Сортировать по типу">по типу</a></li>
+            <li class="on_type_li"><a href="#" class="on_type" aria-label="Сортировать по названию">по названию</a></li>
+            <li class="down_triange_li"><button type="button" class="down_tri" aria-label="стрелка вниз"></button></li>
+            <li class="up_triangle_li"><button type="button" class="up_tri" aria-label="стрелка вверх"></button></li>
+          </ul>
+
+          <h2 class="to_hide">Готовые шаблоны</h2>  
+          
+          <div class="prog_block">
+            <div class="sedona">
+              <img src="img/sedona_screenshot_a.jpg" alt="sedona_screenshot" height="578" width="358">
+              <div class="sedona_info info">
+                <a href="#" aria-label="Проект Седона"><h3>sedona</h3></a>
+                <p>Информационный сайт<br>
+                  для туристов</p>
+                <a class="proj_butt" href="#" aria-label="купить за 9900 рублей">9 900 ₽</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="prog_block">
+            <div class="pink">
+              <img src="img/pink_screenshot_a.jpg" alt="pink_screenshot" height="578" width="358">
+              <div class="pink_info info">
+                <a href="#" aria-label="Проект Пинк"><h3>pink App</h3></a>
+                  <p>Продуктовый лендинг<br>
+                  приложения для iOS и Android</p>
+                  <a class="proj_butt" href="#" aria-label="купить за 9900 рублей">9 900 ₽</a> 
+              </div>
+            </div>
+          </div>
+
+          <div class="prog_block">
+            <div class="borodino">
+              <img src="img/borodinski_screenshot_a.jpg" alt="borodino_screenshot" width="358" height="578" >
+              <div class="barber_info info">
+                <a href="#" aria-label="Проект Бородино"><h3>barbershop</h3></a>
+                <p>Сайт салона красоты.<br>
+                Для мужчин, да.</p>
+                <a class="proj_butt" href="#" aria-label="купить за 9900 рублей">9 900 ₽</a> 
+              </div>
+            </div>
+          </div>
+          
+          <div class="prog_block">
+            <div class="handmade">
+              <img src="img/handmade_screenshot_a.jpg" alt="handmade_screenshot" width="358" height="578" >
+              <div class="handmade_info info">
+                <a href="#" aria-label="Интернет магазин игрушек - проект"><h3>mishka</h3></a>
+                <p class="mishka_text">Интернет-магазин<br>
+                вязаных игрушек</p>
+                <a class="proj_butt" href="#" aria-label="купить за 9900 рублей">9 900 ₽</a> 
+              </div>
+            </div>
+          </div>
+
+          <div class="prog_block">
+            <div class="school">
+              <img src="img/school_screenshot_a.jpg" alt="school_screenshot" width="358" height="578" >
+              <div class="school_info info">
+                <a href="#" aria-label="Проект Школа"><h3>a plus</h3></a>
+                <p>Лендинг курсов повышения<br>
+                квалификации</p>
+                <a class="proj_butt" href="#" aria-label="купить за 9900 рублей">9 900 ₽</a> 
+              </div>
+            </div>
+          </div>
+
+          <div class="prog_block">
+            <div class="kvas">
+              <img src="img/kraft_screenshot_a.jpg" alt="kvas_screenshot" height="578" width="358">
+              <div class="kvas_info info">
+                <a href="#" aria-label="Проект Кваст"><h3 class="kvast_reference">кваст</h3></a>
+                <p class="kvast_text">Промо-сайт производителя<br>
+                  крафтового кваса</p>
+                <a class="proj_butt" href="#" aria-label="купить за 9900 рублей">9 900 ₽</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- main_center -->
+
+      <div class="page_navi_block_center">
+        <div></div>
+        <div class="page_navi_block">
+          <a class="page_navi_block_a first_page" href="#" aria-label="Первая страница">1</a>
+          <a class="page_navi_block_a" href="#" aria-label="Вторая страница">2</a>
+          <a class="page_navi_block_a" href="#" aria-label="Третья страница">3</a>
+          <a class="page_navi_block_a" href="#" aria-label="Следующая страница">Следующая</a>
+          
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer_block">
+        <section class="big_map_block">
+          <div class="map_center">
+            <div class="contacts_block">
+              <h5>NЁRDS DESIGN STUDIO</h5>
+              <div>
+                <p>наб. Реки Карповки, <br>5 лит П, Санкт-Петербург</p>
+                <a class="telephone" href="tel:+78005558628" aria-label="контактный телефон">+7 800 555-86-28</a>
+              </div>
+              <a class="write_me_butt" href="" aria-label="Кнопка напишите нам">Напишите нам</a>
+            </div>
+          </div>
+        </section>
+        <div class="icon_center">
+          <div class="icons_block">
+            <a class="vk_icon" href="#" aria-label="ВКонтакте"></a>
+            <a class="fb_icon" href="#" aria-label="Фейсбук"></a>
+            <a class="insta_icon" href="#" aria-label="Инстаграм"></a>
+          </div>
+          <div class="promo">
+            <h2 class="fot_header">Давайте дружить, это выгодно!</h2>
+            <p class="disconts_10">Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+        </div>
+    </footer>
+    <div class="modal_center">
+      <section class="modal">
+        <div class="head_block">
+          <h2 class="write_us">Напишите нам</h2>
+          <button class="modal_close" type="button" aria-label="Кнопка закрыть"></button>
+        </div>
+        <form class="your_contacts" action="https://echo.htmlacademy.ru" method="POST">
+          <div class="name_block">
+            <label class="subscribe" for="name">Ваше имя:</label>
+            <input class="inp" name="your_name" id="name" type="text" placeholder="Имя Фамилия" aria-label="Напишите ваше имя">
+          </div>
+          <div class="email_block">
+            <label class="subscribe" for="еmail_to">Ваш email:</label>
+            <input class="inp" name="your_еmail" id="еmail_to" type="email" placeholder="email@example.com" aria-label="Напишите ваш емейл">
+          </div>
+          <div class="text_block">
+            <label class="subscribe" for="text">Текст письма:</label>
+            <p><textarea class="m_text inp" id="text" name="your_text" placeholder="В свободной форме" aria-label="Напишите здесь ваше письмо"></textarea></p>
+          </div>
+          <button class="m_submit_button" type="submit">отправить</button>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
+
+
+
+
